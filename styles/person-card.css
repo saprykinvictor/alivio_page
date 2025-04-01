@@ -1,0 +1,86 @@
+.person-card {
+  padding-top: 20px;
+  position: absolute;
+  left: -60px;
+  bottom: -84px;
+  width: 300px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: var(--white);
+  color: #000;
+}
+
+.person-card__title {
+  margin-bottom: 18px;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+.person-card__title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.person-card__preview {
+  margin-bottom: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.person-card__preview-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: -30px -10px;
+}
+
+.person-card__name {
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.person-card__descr {
+  align-items: start;
+}
+
+.person-card__subtitle {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.person-card__list {
+  margin-left: 15px;
+}
+
+.person-card__list-item {
+  font-size: 10px;
+  list-style: disc;
+}
+
+.person-card__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .person-card {
+    display: none;
+  }
+}

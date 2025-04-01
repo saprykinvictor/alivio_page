@@ -35,7 +35,8 @@ h4,
 h5,
 h6,
 p,
-figure {
+figure,
+blockquote {
   padding: 0;
   margin: 0;
   
